@@ -51,6 +51,7 @@ export const Todo = ({ complete = false, value = '', index, save, create, disabl
       _hover={{ backgroundColor: '#FAFAFC' }}
     >
       <Flex>
+        
         <Box
           style={{ position: 'relative', top: '14px' }}
           onClick={() => {
@@ -91,7 +92,7 @@ export const Todo = ({ complete = false, value = '', index, save, create, disabl
                 e.target.blur();
               } else if (e.key === 'Enter') {
                 create();
-                e.target.blur();
+                e.target.blur( );
               }
             }}
             onChange={e => {
